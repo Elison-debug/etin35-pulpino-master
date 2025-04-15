@@ -27,7 +27,7 @@ set_attr init_hdl_search_path { \
 	../pulpino/ips/axi/axi_node \
 	../pulpino/ips/axi/axi_slice \
 	../pulpino/ips/axi/axi_slice_dc \
-	../pulpino/ips/axi/axi_spi_master \
+	#../pulpino/ips/axi/axi_spi_master \
 	../pulpino/ips/axi/axi_spi_slave \
 	../pulpino/ips/axi/core2axi \
 } /
@@ -55,6 +55,37 @@ set DESIGN_FILES_SV { \
 	axi_mem_if_DP_hybr.sv axi_mem_if_DP.sv \
 	axi_mem_if_MP_Hybrid_multi_bank.sv axi_mem_if_multi_bank.sv \
 	axi_mem_if_SP.sv axi_read_only_ctrl.sv axi_write_only_ctrl.sv \
+	defines.v apb_regs_top.sv axi_BR_allocator.sv axi_request_block.sv\
+        axi_address_decoder_AR.sv axi_BW_allocator.sv axi_response_block.sv\
+        axi_address_decoder_AW.sv axi_DW_allocator.sv axi_RR_Flag_Req.sv\
+	axi_address_decoder_BR.sv  axi_FanInPrimitive_Req.sv \
+	axi_address_decoder_BW.sv  axi_multiplexer.sv\
+        axi_address_decoder_DW.sv  axi_node.sv\
+        axi_AR_allocator.sv        axi_node_wrap.sv\
+        axi_ArbitrationTree.sv     axi_node_wrap_with_slices.sv\
+        axi_AW_allocator.sv        axi_regs_top.sv\
+        axi_ar_buffer.sv axi_buffer.sv axi_w_buffer.sv\
+        axi_aw_buffer.sv axi_r_buffer.sv axi_b_buffer.sv  axi_slice.sv \
+	axi_slice_dc_master.sv  dc_synchronizer.v axi_slice_dc_slave.sv dc_token_ring_fifo_din.v \
+        dc_data_buffer.v        dc_token_ring_fifo_dout.v \
+        dc_full_detector.v      dc_token_ring.v \
+        axi_spi_slave.sv       spi_slave_cmd_parser.sv  spi_slave_rx.sv \
+        spi_slave_controller.sv  spi_slave_syncro.sv \
+        spi_slave_dc_fifo.sv     spi_slave_tx.sv \
+        spi_slave_axi_plug.sv  spi_slave_regs.sv \
+        core2axi.sv\
+        #AXI files done!
+        
+
+
+
+
+	
+
+        
+
+
+
 	apb_regs_top.sv axi_address_decoder_AR.sv axi_address_decoder_AW.sv \
 	axi_address_decoder_BR.sv axi_address_decoder_BW.sv \
 	axi_address_decoder_DW.sv axi_AR_allocator.sv axi_ArbitrationTree.sv \
